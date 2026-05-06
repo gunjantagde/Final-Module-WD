@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TechFront 2024 Conference</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Element Selector */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2;
+            padding: 2;
+            background-color: rgb(199, 155, 178);
+        }
+
+        /* ID Selector */
+        #home {
+            background: linear-gradient(rgba(219, 226, 216, 0.5), rgba(0,0,0,0.5)),
+            url('https://images.unsplash.com/photo-1511578314322-379afb476865');
+            background-size: cover;
+            background-position: center;
+            height: 90vh;
+        }
+
+        /* Class Selector */
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+        }
+
+        /* Hover Effect */
+        .btn:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+
+        /* Card Styling */
+        .speaker-card {
+            border: solid;
+            box-shadow: 0 4px 10px rgba(186, 203, 189, 0.15);
+            transition: 0.3s;
+            background: lightslategray;
+        }
+
+        .speaker-card:hover {
+            transform: translateY(-8px);
+        }
+
+        /* Registration Form */
+        .registration-form {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            background: #af4d89;
+            box-shadow: 0 4px 12px rgba(71, 120, 144, 0.1);
+        }
+
+        /* Navbar Hover */
+        .nav-link:hover {
+            color: #0d6efd !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">TechFront 2024</a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#speakers">Speakers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#register">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero text-center text-white d-flex align-items-center">
+        <div class="container">
+            <h1>Welcome to TechFront 2024</h1>
+            <p>Innovation Meets Inspiration</p>
+            <button class="btn btn-primary">Explore More</button>
+        </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section id="speakers" class="container py-5">
+        <h2 class="text-center mb-4">Our Speakers</h2>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card speaker-card">
+                    <div class="card-body">
+                        <h5>John Smith</h5>
+                        <p>Software Engineer</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card speaker-card">
+                    <div class="card-body">
+                        <h5>Lisa Ray</h5>
+                        <p>AI Specialist</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card speaker-card">
+                    <div class="card-body">
+                        <h5>David Kim</h5>
+                        <p>Cybersecurity Specialist</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card speaker-card">
+                    <div class="card-body">
+                        <h5>Sophia Brown</h5>
+                        <p>Cloud Computing Engineer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card speaker-card">
+                    <div class="card-body">
+                        <h5>James Wilson</h5>
+                        <p>Full Stack Developer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card speaker-card">
+                    <div class="card-body">
+                        <h5>Michael Chen</h5>
+                        <p>Blockchain Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Schedule</h2>
+            <table class="table table-bordered text-center">
+                <tr>
+                    <th>Time</th>
+                    <th>Event</th>
+                </tr>
+                <tr>
+            <td>8:30 AM</td>
+            <td>Registration & Welcome Distribution</td>
+        </tr>
+        <tr>
+            <td>9:00 AM</td>
+            <td>Opening Ceremony</td>
+        </tr>
+        <tr>
+            <td>10:00 AM</td>
+            <td>Keynote Speech: Future of Technology</td>
+        </tr>
+        <tr>
+            <td>11:00 AM</td>
+            <td>AI & Machine Learning Workshop</td>
+        </tr>
+        <tr>
+            <td>12:30 PM</td>
+            <td>Lunch Break</td>
+        </tr>
+        <tr>
+            <td>1:30 PM</td>
+            <td>Web Development Trends 2024</td>
+        </tr>
+        <tr>
+            <td>2:30 PM</td>
+            <td>Cybersecurity Awareness Session</td>
+        </tr>
+        <tr>
+            <td>3:30 PM</td>
+            <td>Networking & Startup Pitch</td>
+        </tr>
+        <tr>
+            <td>5:30 PM</td>
+            <td>Closing Ceremony & Awards</td>
+        </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="container py-5">
+        <h2 class="text-center mb-4">Register Now</h2>
+
+        <form class="registration-form">
+            <input type="text" placeholder="Enter Name" class="form-control mb-3">
+            <input type="email" placeholder="Enter Email" class="form-control mb-3">
+            <select class="form-select mb-3">
+                <option>Select Ticket Type</option>
+                <option>Standard</option>
+                <option>Premium</option>
+                <option>VIP</option>
+            </select>
+            <label>Ticket Availability:</label>
+            <progress value="70" max="100"></progress><br>
+
+            <button class="btn btn-success w-100">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3">
+        © 2024 TechFront Conference
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
